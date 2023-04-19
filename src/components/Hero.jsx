@@ -1,6 +1,24 @@
+import heroImg from '../assets/hero.svg';
+
 const Hero = () => {
   return (
-    <div>Hero</div>
-  )
-}
-export default Hero
+    <div className='hero'>
+      <div className='hero-center'>
+        <div className='hero-title'>
+          <h1>Contentful CMS</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
+            vel incidunt accusamus animi laboriosam suscipit! Modi culpa id
+            error vitae pariatur hic dignissimos itaque? Ratione cum nam,
+            accusantium asperiores maiores quia numquam praesentium
+            reprehenderit magni ex recusandae officiis omnis expedita.
+          </p>
+        </div>
+        <div className='img-container'>
+          <img src={heroImg} alt='cartoon lady working' className='img' />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Hero;
