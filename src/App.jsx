@@ -1,4 +1,7 @@
 import { Hero, Projects } from './components';
+import { getContents } from './fetchProjects';
+
+getContents();
 
 const App = () => {
   return (
