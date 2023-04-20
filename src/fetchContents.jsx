@@ -24,16 +24,18 @@ export const useFetchContents = () => {
       });
       setContents(contents);
       setLoading(false);
-      console.log(response.items);
     } catch (error) {
       console.log(error);
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    getContents();
+  }, []);
+
   return { loading, contents };
 };
-
-useEffect(() => {}, [getContent()]);
 
 // client
 //   .getEntries({
